@@ -32,7 +32,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/menu.png" />
+                        <Image url="@../img/menu.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -41,7 +41,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/fornecedor.png" />
+                        <Image url="@../img/fornecedor.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -50,7 +50,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/cliente.png" />
+                        <Image url="@../img/cliente.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -59,7 +59,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/produtos.png" />
+                        <Image url="@../img/produtos.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -68,7 +68,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/vendas.png" />
+                        <Image url="@../img/vendas.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -77,7 +77,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/contas.png" />
+                        <Image url="@../img/contas.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -86,7 +86,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/ajuda.png" />
+                        <Image url="@../img/ajuda.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -95,7 +95,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../visao/img/sair.png" />
+                        <Image url="@../img/sair.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -117,10 +117,13 @@
                      <opaqueInsets>
                         <Insets right="4.0" />
                      </opaqueInsets></JFXButton>
-                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" prefHeight="10.0" prefWidth="55.0" style="-fx-background-color: #FF4000;" text="Deletar" textFill="WHITE">
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="10.0" prefWidth="55.0" style="-fx-background-color: #FF4000;" text="Deletar" textFill="WHITE">
                      <effect>
                         <MotionBlur />
                      </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
                   </JFXButton>
                </children>
             </HBox>

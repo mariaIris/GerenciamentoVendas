@@ -57,11 +57,17 @@
                   <JFXButton lineSpacing="4.0" style="-fx-background-color: #0040FF;" text="Atualizar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <opaqueInsets>
                         <Insets bottom="8.0" left="4.0" right="8.0" top="4.0" />
-                     </opaqueInsets></JFXButton>
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></JFXButton>
                   <JFXButton lineSpacing="4.0" style="-fx-background-color: #FF4000;" text="Cancelar" textAlignment="CENTER" textFill="WHITE">
                      <opaqueInsets>
                         <Insets bottom="8.0" left="4.0" right="8.0" top="4.0" />
-                     </opaqueInsets></JFXButton>
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></JFXButton>
                </children>
                <cursor>
                   <Cursor fx:constant="N_RESIZE" />
