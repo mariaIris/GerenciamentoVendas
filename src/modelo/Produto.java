@@ -1,22 +1,30 @@
 package modelo;
 
-class Produto {
+public class Produto {
     
     private int id;
     private double valor;
     private String nome;
+    private String marca;
     private int qtd;
-    private Fornecedor fornecedor;
 
-    public Produto(double valor, String nome,int qtd, Fornecedor fornecedor) {
+    public Produto(double valor, String nome, String marca, int qtd) {
         this.valor = valor;
         this.nome = nome;
+        this.marca = marca;
         this.qtd = qtd;
-        this.fornecedor = fornecedor;
     }
 
+    public Produto(){
+        
+    }
+    
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public double getValor() {
@@ -35,6 +43,14 @@ class Produto {
         this.nome = nome;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
     public int getQtd() {
         return qtd;
     }
@@ -43,17 +59,9 @@ class Produto {
         this.qtd = qtd;
     }
 
-    public Fornecedor getFornecedor() {
-        return fornecedor;
-    }
-
-    public void setFornecedor(Fornecedor fornecedor) {
-        this.fornecedor = fornecedor;
-    }
-
     @Override
     public String toString() {
-        return "Produto{" + "id=" + id + ", valor=" + valor + ", nome=" + nome + ", fornecedor=" + fornecedor + '}';
+        return "Produto{" + "id=" + id + ", valor=" + valor + ", nome=" + nome + '}';
     }
 
     

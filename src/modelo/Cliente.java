@@ -1,22 +1,33 @@
 package modelo;
 
-import java.util.ArrayList;
+import java.util.Date;
+import java.util.Objects;
 
-class Cliente {
+public class Cliente {
     
     private int id;
-    private String nome; 
-    private String telefone;
-    private ArrayList<Sacola> minhaSacola;
+    private String nome;
+    private String cpf;
+    private String contato;
+    private Date cadastro;
+    private Date nasc;
+    //private ArrayList<Sacola> minhaSacola;
 
-    public Cliente(String nome, String telefone) {
+    public Cliente(String nome, String cpf, String contato, Date cadastro, Date nasc) {
         this.nome = nome;
+        this.cpf = cpf;
+        this.contato = contato;
+        this.cadastro = cadastro;
+        this.nasc = nasc;
     }
-
-    public int getId() {
-        return id;
+    
+    public Cliente(String nome, String cpf, Date cadastro, Date nasc) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.cadastro = cadastro;
+        this.nasc = nasc;
     }
-
+    
     public String getNome() {
         return nome;
     }
@@ -25,20 +36,60 @@ class Cliente {
         this.nome = nome;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-   
-    public ArrayList<Sacola> getMinhaSacola() {
-        return minhaSacola;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
-    public void setMinhaSacola(ArrayList<Sacola> minhaSacola) {
-        this.minhaSacola = minhaSacola;
+    public String getContato() {
+        return contato;
     }
-    
+
+    public void setContato(String contato) {
+        this.contato = contato;
+    }
+
+    public Date getCadastro() {
+        return cadastro;
+    }
+
+    public void setCadastro(Date cadastro) {
+        this.cadastro = cadastro;
+    }
+
+    public Date getNasc() {
+        return nasc;
+    }
+
+    public void setNasc(Date nasc) {
+        this.nasc = nasc;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 97 * hash + Objects.hashCode(this.cpf);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Cliente other = (Cliente) obj;
+        if (!Objects.equals(this.cpf, other.cpf)) {
+            return false;
+        }
+        return true;
+    }
 }

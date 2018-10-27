@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import persistencia.Conexao;
 
 /**
  *
@@ -45,7 +46,9 @@ public class Principal extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
+        //launch(args);
+        Conexao conn = new Conexao();
+        conn.conecta();
     }
     
 }

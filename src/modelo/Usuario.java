@@ -4,16 +4,27 @@ import java.util.ArrayList;
 
 
 public class Usuario {
-    
+   
     private int id;
     private String nome;
-    private ArrayList<Cliente> meusCliente;
+    private String contato;
+    private String cpf;
 
+    public Usuario(String nome, String contato, String cpf) {
+        this.nome = nome;
+        this.contato = contato;
+        this.cpf = cpf;
+    }
+    
     public Usuario() {
     }
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -24,11 +35,21 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public ArrayList<Cliente> getMeusCliente() {
-        return meusCliente;
+    public String getContato() {
+        return contato;
     }
 
-    public void setMeusCliente(ArrayList<Cliente> meusCliente) {
-        this.meusCliente = meusCliente;
-    }   
+    public void setContato(String contato) {
+        this.contato = contato;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    
 }
