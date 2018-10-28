@@ -32,34 +32,34 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXComboBox fx:id="cbAutor" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="PRODUTO" unFocusColor="#c9c9c9" />
-            <JFXComboBox fx:id="cbTitulo" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="MARCA" unFocusColor="#c9c9c9" GridPane.rowIndex="1" />
-            <JFXButton id="BTNS" fx:id="btAddAutor" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00a9e7;" text="." textFill="#ffffff07" GridPane.columnIndex="1">
+            <JFXComboBox fx:id="cbNome" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="PRODUTO" unFocusColor="#c9c9c9" />
+            <JFXComboBox fx:id="cbMarca" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="MARCA" unFocusColor="#c9c9c9" GridPane.rowIndex="1" />
+            <JFXButton id="BTNS" fx:id="btAddProduto" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00a9e7;" text="." textFill="#ffffff07" GridPane.columnIndex="1">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
-            <JFXButton id="BTNS" fx:id="btEditAutor" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00b56f;" text="." textFill="#ffffff09" GridPane.columnIndex="2">
+            <JFXButton id="BTNS" fx:id="btEditNome" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00b56f;" text="." textFill="#ffffff09" GridPane.columnIndex="2">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" style="-fx-color-: #01DF3A;" />
                </graphic>
             </JFXButton>
-            <JFXButton id="BTNS" fx:id="btDelAutor" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #ff5656;" text="." textFill="#ffffff04" GridPane.columnIndex="3">
+            <JFXButton id="BTNS" fx:id="btDelNome" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #ff5656;" text="." textFill="#ffffff04" GridPane.columnIndex="3">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
-            <JFXButton id="BTNS" fx:id="btAddTitulo" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00a9e7;" text="." textFill="#ffffff04" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <JFXButton id="BTNS" fx:id="btAddNome" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00a9e7;" text="." textFill="#ffffff04" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
-            <JFXButton id="BTNS" fx:id="btEditTitulo" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00b56f;" text="." textFill="#ffffff09" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <JFXButton id="BTNS" fx:id="btEditMarca" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00b56f;" text="." textFill="#ffffff09" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
-            <JFXButton id="BTNS" fx:id="btDelTitulo" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #ff5656;" text="." textFill="#ffffff0a" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <JFXButton id="BTNS" fx:id="btDelMarca" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #ff5656;" text="." textFill="#ffffff0a" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
@@ -71,8 +71,8 @@
       </GridPane>
       <HBox alignment="CENTER" prefHeight="61.0" prefWidth="640.0" spacing="10.0">
          <children>
-            <JFXButton id="BTNS" fx:id="btAddExemplar" prefHeight="46.0" prefWidth="99.0" style="-fx-background-color: #00a9e7;" text="ADICIONAR" textFill="WHITE" />
-            <JFXButton id="BTNS" fx:id="btCancelarAdd" prefHeight="46.0" prefWidth="99.0" style="-fx-background-color: #00b56f;" text="CANCELAR" textFill="WHITE" />
+            <JFXButton id="BTNS" prefHeight="46.0" prefWidth="99.0" style="-fx-background-color: #00a9e7;" text="ADICIONAR" textFill="WHITE" />
+            <JFXButton id="BTNS" prefHeight="46.0" prefWidth="99.0" style="-fx-background-color: #00b56f;" text="CANCELAR" textFill="WHITE" />
          </children>
       </HBox>
       <Label fx:id="labelConfirmacao" alignment="CENTER" contentDisplay="CENTER" text="Confirmação" textAlignment="CENTER" textFill="#00b56f" visible="false">
