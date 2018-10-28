@@ -92,4 +92,11 @@ public class Cliente {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", contato=" + contato + ", cadastro=" + cadastro + ", nasc=" + nasc + '}';
+    }
+    
+    
 }

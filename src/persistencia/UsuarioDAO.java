@@ -63,8 +63,8 @@ public class UsuarioDAO {
             // SETA OS VALORES DA INSTRUCAO
             // OBS: PASSA OS PARAMETROS NA ORDEM DAS ? DA INSTRUCAO
             preparaInstrucao.setString(1, u.getNome().toUpperCase());
-            preparaInstrucao.setString(2, u.getContato().toUpperCase());
-            preparaInstrucao.setString(3, u.getCpf());
+            preparaInstrucao.setString(2, u.getCpf());
+            preparaInstrucao.setString(3, u.getContato().toUpperCase());
             preparaInstrucao.setInt(4, u.getId());
 
             // EXECUTA A INSTRUCAO

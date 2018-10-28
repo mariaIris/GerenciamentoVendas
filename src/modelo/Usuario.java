@@ -51,5 +51,10 @@ public class Usuario {
         this.cpf = cpf;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" + "id=" + id + ", nome=" + nome + ", contato=" + contato + ", cpf=" + cpf + '}';
+    }
+
     
 }

@@ -24,7 +24,7 @@ public class ClienteDAO {
     private final String LISTCLIENTE = " SELECT * FROM CLIENTE ORDER BY NOME";
     private final String BUSCARCLIENTE = "SELECT * FROM CLIENTE WHERE UPPER (NOME) LIKE ? ORDER BY NOME";
     
-    public boolean insertUsuario(Cliente c) {
+    public boolean insertCliente(Cliente c) {
         try {
             // CONECTA
             con.conecta();
@@ -131,7 +131,7 @@ public class ClienteDAO {
         return lista;
     }
     
-    public ArrayList<Cliente> buscarUsuario(String nomeCliente) {
+    public ArrayList<Cliente> buscarCliente(String nomeCliente) {
         ArrayList<Cliente> lista = new ArrayList<>(); 
 
         try {

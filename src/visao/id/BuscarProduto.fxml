@@ -16,14 +16,17 @@
 
 <BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.BuscarProdutoController">
    <top>
-      <VBox alignment="CENTER" prefHeight="253.0" prefWidth="1009.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="182.0" prefWidth="605.0" BorderPane.alignment="CENTER">
         <children>
-            <ImageView fitHeight="75.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/produtos.png" />
+                  <Image url="@../img/vendas.png" />
                </image>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
             </ImageView>
-            <GridPane alignment="CENTER" prefHeight="92.0" prefWidth="540.0">
+            <GridPane alignment="CENTER" prefHeight="134.0" prefWidth="478.0">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" maxWidth="457.0" minWidth="10.0" prefWidth="369.0" />
               </columnConstraints>
@@ -32,23 +35,17 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXComboBox fx:id="cbAutor" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="NOME" unFocusColor="#c9c9c9" />
-                  <JFXComboBox fx:id="cbTitulo" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="MARCA" unFocusColor="#c9c9c9" GridPane.rowIndex="1" />
+                  <JFXComboBox fx:id="cbNome" focusColor="#00d087" labelFloat="true" prefHeight="41.0" prefWidth="375.0" promptText="Nome" unFocusColor="#c9c9c9" />
+                  <JFXComboBox fx:id="cbMarca" focusColor="#00d087" labelFloat="true" prefHeight="76.0" prefWidth="381.0" promptText="Marca" unFocusColor="#c9c9c9" GridPane.rowIndex="1" />
                </children>
                <VBox.margin>
                   <Insets left="50.0" right="50.0" />
                </VBox.margin>
             </GridPane>
-            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="640.0" spacing="10.0">
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="600.0" spacing="10.0">
                <children>
-                  <JFXButton id="BTNS" fx:id="btBuscar" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #00a9e7;" text="BUSCAR" textFill="WHITE">
-                     <opaqueInsets>
-                        <Insets bottom="8.0" left="4.0" right="8.0" top="4.0" />
-                     </opaqueInsets></JFXButton>
-                  <JFXButton id="BTNS" fx:id="btCancelar" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #00b56f;" text="CANCELAR" textFill="WHITE">
-                     <opaqueInsets>
-                        <Insets bottom="8.0" left="4.0" right="8.0" top="4.0" />
-                     </opaqueInsets></JFXButton>
+                  <JFXButton id="BTNS" fx:id="btBuscar" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #00a9e7;" text="BUSCAR" textFill="WHITE" />
+                  <JFXButton id="BTNS" fx:id="btCancelar" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #00b56f;" text="CANCELAR" textFill="WHITE" />
                </children>
                <VBox.margin>
                   <Insets top="40.0" />
@@ -61,17 +58,19 @@
       </VBox>
    </top>
    <center>
-      <TableView fx:id="tabela" prefHeight="450.0" prefWidth="1029.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+      <TableView fx:id="tabela" prefHeight="119.0" prefWidth="600.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="colunaCodExemplar" maxWidth="414.0" minWidth="100.0" prefWidth="301.0" text="NOME" />
-          <TableColumn fx:id="colunaNomeTitulo" maxWidth="800.0" minWidth="300.0" prefWidth="418.0" text="MARCA" />
+            <TableColumn fx:id="colunaNome" maxWidth="800.0" minWidth="0.0" prefWidth="195.0" text="NOME" />
+            <TableColumn fx:id="colunaNomeMarca" maxWidth="230.0" minWidth="100.0" prefWidth="203.0" text="MARCA" />
         </columns>
          <columnResizePolicy>
-         
          </columnResizePolicy>
          <BorderPane.margin>
-            <Insets />
+            <Insets top="1.0" />
          </BorderPane.margin>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
       </TableView>
    </center>
    <bottom>
@@ -80,11 +79,17 @@
             <Insets />
          </BorderPane.margin>
          <children>
-            <JFXButton id="BTNS" fx:id="btDeletar" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #ff5656;" text="REMOVER" textFill="WHITE" />
+            <JFXButton id="BTNS" fx:id="btDeletar" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #ff5656;" text="REMOVER" textFill="WHITE">
+               <padding>
+                  <Insets right="5.0" top="1.0" />
+               </padding></JFXButton>
          </children>
          <padding>
             <Insets top="5.0" />
          </padding>
       </HBox>
    </bottom>
+   <opaqueInsets>
+      <Insets top="1.0" />
+   </opaqueInsets>
 </BorderPane>

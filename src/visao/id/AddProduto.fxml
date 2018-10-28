@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.AddProdutoController">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
 <children>
       <ImageView fitHeight="75.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/vendas.png" />
+            <Image url="@../img/produtos.png" />
          </image>
       </ImageView>
       <GridPane alignment="CENTER" prefHeight="112.0" prefWidth="913.0">
@@ -36,56 +36,32 @@
             <JFXComboBox fx:id="cbTitulo" focusColor="#00d087" labelFloat="true" prefHeight="27.0" prefWidth="396.0" promptText="MARCA" unFocusColor="#c9c9c9" GridPane.rowIndex="1" />
             <JFXButton id="BTNS" fx:id="btAddAutor" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00a9e7;" text="." textFill="#ffffff07" GridPane.columnIndex="1">
                <graphic>
-                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/add.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
             <JFXButton id="BTNS" fx:id="btEditAutor" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00b56f;" text="." textFill="#ffffff09" GridPane.columnIndex="2">
                <graphic>
-                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/edit.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" style="-fx-color-: #01DF3A;" />
                </graphic>
             </JFXButton>
             <JFXButton id="BTNS" fx:id="btDelAutor" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #ff5656;" text="." textFill="#ffffff04" GridPane.columnIndex="3">
                <graphic>
-                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/delete.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
             <JFXButton id="BTNS" fx:id="btAddTitulo" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00a9e7;" text="." textFill="#ffffff04" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <graphic>
-                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/add.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
             <JFXButton id="BTNS" fx:id="btEditTitulo" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #00b56f;" text="." textFill="#ffffff09" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <graphic>
-                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/edit.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
             <JFXButton id="BTNS" fx:id="btDelTitulo" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: #ff5656;" text="." textFill="#ffffff0a" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <graphic>
-                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/delete.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                </graphic>
             </JFXButton>
          </children>

@@ -24,7 +24,7 @@ public class ProdutoDAO {
     private final String LISTPRODUTO = "SELECT * FROM PRODUTO ORDER BY NOME";
     private final String BUSCARPRODUTO = "SELECT * FROM PRODUTO WHERE PRODUTO WHERE UPPER(NOME) LIKE ? ORDER BY NOME";
     
-    public boolean insertUsuario (Produto p){
+    public boolean insertProduto (Produto p){
         try {
             // CONECTA
             con.conecta();

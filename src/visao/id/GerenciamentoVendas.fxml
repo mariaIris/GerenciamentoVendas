@@ -73,15 +73,6 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton text="Contas">
-               <graphic>
-                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/contas.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </JFXButton>
             <JFXButton text="Ajuda">
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
